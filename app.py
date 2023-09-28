@@ -6,7 +6,7 @@ import requests
 import os
 import streamlit as st
 
-load_dotenv()
+st.write("OPENAI_API_KEY:", st.secrets["OPENAI_API_KEY"])
 
 
 #LLM
