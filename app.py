@@ -1,9 +1,10 @@
+from dotenv import find_dotenv, load_dotenv
 from langchain import PromptTemplate, LLMChain, OpenAI
 from langchain.chat_models import ChatOpenAI
 import os
 import streamlit as st
 
-st.write("OPENAI_API_KEY:", st.secrets["OPENAI_API_KEY"])
+load_dotenv()
 
 
 #LLM
